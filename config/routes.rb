@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+
   root 'messages#index'
   resources :messages , except: [:index, :new]
   # The priority is based upon order of creation: first created -> highest priority.
